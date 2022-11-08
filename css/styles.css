@@ -701,6 +701,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-close:hover {
@@ -755,6 +756,7 @@ button {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-input {
@@ -765,6 +767,7 @@ button {
   padding-left: 42px;
   outline: transparent;
   cursor: pointer;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .modal-input:focus,
@@ -785,6 +788,7 @@ button {
   outline: transparent;
   resize: none;
   cursor: pointer;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .modal-comment::placeholder {
@@ -812,12 +816,18 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 
 .checkbox-input:checked + .checkbox-text span {
   background-color: var(--acctnt-color);
   fill: var(--hero-studio-footer-text-color);
   border-color: transparent;
+}
+
+.checkbox-input:focus + .checkbox-text span {
+  border-color: var(--acctnt-color);
 }
 
 .contract {
