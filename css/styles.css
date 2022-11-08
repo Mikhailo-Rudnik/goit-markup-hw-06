@@ -441,7 +441,7 @@ button {
 
 .footer-cotainer {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
 }
 
@@ -489,6 +489,11 @@ button {
   color: var(--acctnt-color);
 }
 
+.subscribe-wrap {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
 .subscribe {
   color: var(--hero-studio-footer-text-color);
   font-weight: 700;
@@ -529,7 +534,31 @@ button {
   background-color: var(--acctnt-color);
 }
 
-/* ПОРТФОЛІО */
+/* .send {
+}
+
+.subscribe {
+} */
+
+.button-subscribe {
+  display: flex;
+  padding: 10px 32px;
+
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.send-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+---------------------------/* ПОРТФОЛІО */----------------
 
 .button-list {
   display: flex;
@@ -674,6 +703,10 @@ button {
   justify-content: center;
 }
 
+.modal-close:hover {
+  fill: var(--acctnt-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -731,6 +764,7 @@ button {
   border-radius: 4px;
   padding-left: 42px;
   outline: transparent;
+  cursor: pointer;
 }
 
 .modal-input:focus,
@@ -747,9 +781,10 @@ button {
   height: 120px;
   border: 1px solid var(--border-modal-input);
   border-radius: 4px;
-  padding: 12px;
+  padding: 12px 16px;
   outline: transparent;
   resize: none;
+  cursor: pointer;
 }
 
 .modal-comment::placeholder {
@@ -758,4 +793,48 @@ button {
   letter-spacing: 0.01em;
 
   color: var(--placeholder-color);
+}
+
+.checkbox-text {
+  line-height: 1.71;
+  color: var(--contacts-features-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-studio-header-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.checkbox-input:checked + .checkbox-text span {
+  background-color: var(--acctnt-color);
+  fill: var(--hero-studio-footer-text-color);
+  border-color: transparent;
+}
+
+.contract {
+  color: var(--acctnt-color);
+  text-decoration: underline;
+}
+
+.button-submit {
+  padding: 10px 32px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
