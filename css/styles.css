@@ -19,6 +19,7 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --border-modal-input: rgba(33, 33, 33, 0.2);
   --placeholder-color: rgba(117, 117, 117, 0.5);
+  --border-input-footer: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -441,7 +442,6 @@ button {
 
 .footer-cotainer {
   display: flex;
-  /* gap: 70px; */
   align-items: baseline;
 }
 
@@ -491,7 +491,7 @@ button {
 
 .subscribe-wrap {
   margin-left: 70px;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .subscribe {
@@ -534,11 +534,29 @@ button {
   background-color: var(--acctnt-color);
 }
 
-/* .send {
+.send-wrap {
+  display: flex;
 }
 
-.subscribe {
-} */
+.input-footer {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid var(--border-input-footer);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.input-footer::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-contacts-color);
+}
 
 .button-subscribe {
   display: flex;
